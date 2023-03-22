@@ -1,0 +1,13 @@
+<!-- <p>date-picker works!</p> -->
+<mat-form-field>
+  <mat-label>1Choose a date</mat-label>
+  <input matInput [matDatepicker]="picker" />
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker [calendarHeaderComponent]="header"></mat-datepicker>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>2Choose a date</mat-label>
+  <input matInput [matDatepicker]="picker1" />
+  <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+  <mat-datepicker #picker1 [calendarHeaderComponent]="header2"></mat-datepicker>
+</mat-form-field>

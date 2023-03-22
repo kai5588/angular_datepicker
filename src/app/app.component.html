@@ -324,6 +324,26 @@
       </svg>
     </a>
 </div>
+<br>
+<br>
+<br>
+<br>
+<div>
+  <div>TEST</div>
+  <input matInput [matDatepicker]="picker">
+    <mat-hint>1-MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker [startView]="'multi-year'"#picker></mat-datepicker>
+  <div>TEST2</div>
+  <input matInput [matDatepicker]="picker1">
+    <mat-hint>2-MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+  <mat-datepicker [startView]="'year'"#picker1></mat-datepicker>
+  <div>TEST3</div>
+
+  <app-date-picker></app-date-picker>
+
+</div>
 
 <div class="content" role="main">
 
